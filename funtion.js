@@ -43,11 +43,20 @@
 // console.log(isEven(5));
 // console.log(isEven(2));
 
-function isOdd(number){
-    if(number % 2 === 1){
-        return true;
-    }
-    return false;
+// function isOdd(number){
+//     if(number % 2 === 1){
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(isOdd(5));
+// console.log(isOdd(8));
+
+
+function evenSizedStr (str){
+const size = str.length;
+console.log(str, size);
+
 }
-console.log(isOdd(5));
-console.log(isOdd(8));
+evenSizedStr('Dhaka');
+evenSizedStr('faka');
