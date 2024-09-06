@@ -52,11 +52,39 @@
 // console.log(isOdd(5));
 // console.log(isOdd(8));
 
+// function evenSizedStr (str){
+// const size = str.length;
+// console.log(str, size);
+// if(size % 2 === 0){
+// console.log('even size');
+// return true
+// }else{
+//     console.log('odd size');
+//     return false
+// }
 
-function evenSizedStr (str){
-const size = str.length;
-console.log(str, size);
+// }
+// evenSizedStr('Dhaka');
+// evenSizedStr('faka');
 
+// function doubleOrTriple(number, doDouble) {
+//   if (doDouble === true) {
+//     const result = number * 2;
+//     return true;
+//   } else {
+//     const result = number * 3;
+//     return result;
+//   }
+// }
+// console.log(5, true);
+// console.log(5, false);
+
+function numberOfElement(number){
+    const len = number.length;
+    return len;
 }
-evenSizedStr('Dhaka');
-evenSizedStr('faka');
+
+function getAge (person){
+    const age = person.age;
+    return age;
+}
