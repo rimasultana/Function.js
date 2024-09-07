@@ -242,15 +242,34 @@ const uniueArray = noDublicate(numbers);
 console.log(uniueArray); */
 
 /* 
-!function Max, Min
+/* !function Max, Min
 */
 
 // !sob chaya choto somkha bar korar niyam
 
-const min = Math.min(45, 20,400, 5);
-console.log(min);
+/* const min = Math.min(45, 20,400, 5);
+console.log(min); */
 
 // ! sob chaya bro sonkha bar korar niyam
 
-const max = Math.max(45, 21, 65, 90, 40, 23);
-console.log(max);
+/* const max = Math.max(45, 21, 65, 90, 40, 23);
+console.log(max); */
+
+
+// console.log(Math.PI);
+
+
+/* 
+!- thakle (+) + thakle (-)
+gap thakle saita (-) (+) diya thik kore dai
+console.log(Math.abs(-88)); */
+
+
+/*
+!round diya purno sonkha kore dibe
+Example:
+console.log(Math.round(2.25));
+console.log(Math.round(3.50)); */
+
+console.log(Math.floor(2.90));
+console.log(Math.ceil(2.90));
