@@ -221,12 +221,11 @@ const numbers = [42, 13, 58, 65, 81, 96, 7];
 const avg = oddAverage(numbers);
 console.log("average of the odd number is : ", avg); */
 
-
 /* 
 ! array has some duplicate elements []
 
 */
-
+/* 
 const biryanikhor = ['abul', 'babul', 'cabul', 'babul', 'dabul', 'kabul', 'cabul'];
 const numbers = [1, 5, 61, 5, 87, 7, 5, 81, 61];
 
@@ -240,4 +239,18 @@ function noDublicate(array){
   return uniue;
 }
 const uniueArray = noDublicate(numbers);
-console.log(uniueArray);
+console.log(uniueArray); */
+
+/* 
+!function Max, Min
+*/
+
+// !sob chaya choto somkha bar korar niyam
+
+const min = Math.min(45, 20,400, 5);
+console.log(min);
+
+// ! sob chaya bro sonkha bar korar niyam
+
+const max = Math.max(45, 21, 65, 90, 40, 23);
+console.log(max);
