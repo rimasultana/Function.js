@@ -161,11 +161,62 @@ function kilometermils(kilo){
   return mils
 }
 console.log(kilometermils(2)); */
-function icLeapYear(year) {
+
+// simple logic
+/* function icLeapYear(year) {
   if (year % 4 === 0) {
     return true;
-  }else{
+  } else {
     return true;
   }
 }
-console.log(icLeapYear(2023));
+console.log(icLeapYear(2023)); */
+
+/* 
+1.those year that is not divisible by 100, is the year is dividible by 4:
+then it will be a leap year
+2.
+*/
+
+/* function isLeapyear (year2){
+  if(year2 % 100 !== 0 && year2 % 4){
+    return true;
+  }else if(year2 %100 === 0 && year2 % 400){
+    return true
+  }else{
+    return false;
+  }
+}
+const isLeap = isLeapyear(2100);
+const isLeap2 = isLeapyear(2400);
+const isLeap3 = isLeapyear(1900);
+const isLeap4 = isLeapyear(2052);
+
+console.log(isLeap, isLeap2, isLeap3, isLeap4); */
+
+/* 
+! function takes an array as parameter
+!gives me the average of the odd number in the array
+*/
+
+/* function oddAverage(numbers) {
+  const odds = [];
+  for (const number of numbers) {
+    if (number % 2 === 1) {
+      odds.push(number);
+    }
+  }
+  // console.log(odds);
+  let sum = 0;
+  for (const number of odds) {
+    sum = sum + number;
+  }
+  const count = odds.length;
+  console.log(sum, count);
+  const avg = sum / count;
+  return avg;
+}
+
+const numbers = [42, 13, 58, 65, 81, 96, 7];
+const avg = oddAverage(numbers);
+console.log("average of the odd number is : ", avg); */
