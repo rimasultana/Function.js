@@ -147,7 +147,7 @@ const shuvoHeight2 = inchToFeet2(75);
 
 //  mail To kilometer a convert
 
-function mileToKilometer (mile){
+/* function mileToKilometer (mile){
 const kilo = mile * 1.60934;
 return kilo;
 }
@@ -160,4 +160,12 @@ function kilometermils(kilo){
   const mils = kilo * 0.621371;
   return mils
 }
-console.log(kilometermils(2));
+console.log(kilometermils(2)); */
+function icLeapYear(year) {
+  if (year % 4 === 0) {
+    return true;
+  }else{
+    return true;
+  }
+}
+console.log(icLeapYear(2023));
