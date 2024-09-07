@@ -220,3 +220,24 @@ console.log(isLeap, isLeap2, isLeap3, isLeap4); */
 const numbers = [42, 13, 58, 65, 81, 96, 7];
 const avg = oddAverage(numbers);
 console.log("average of the odd number is : ", avg); */
+
+
+/* 
+! array has some duplicate elements []
+
+*/
+
+const biryanikhor = ['abul', 'babul', 'cabul', 'babul', 'dabul', 'kabul', 'cabul'];
+const numbers = [1, 5, 61, 5, 87, 7, 5, 81, 61];
+
+function noDublicate(array){
+  const uniue = [];
+  for(const item of array){
+   if(uniue.includes(item) === false){
+    uniue.push(item);
+   }
+  }
+  return uniue;
+}
+const uniueArray = noDublicate(numbers);
+console.log(uniueArray);
