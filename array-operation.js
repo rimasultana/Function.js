@@ -352,10 +352,7 @@ shirt prize = 500;
 pant prize 300;
 show prize = 900; */
 
-
-
-
-const prices = [20000, 16000, 50000, 10000, 12000, 30000, 35000];
+/* const prices = [20000, 16000, 50000, 10000, 12000, 30000, 35000];
 
 function getMin(numbers) {
   let min = numbers[0]; 
@@ -369,3 +366,27 @@ function getMin(numbers) {
 
 const cheap = getMin(prices);
 console.log('Cheapest one is:', cheap);
+ */
+
+// object er khatre
+
+const phones = [
+  { Name: "Oppo", prize: 30000, color: "black" },
+  { Name: "Vivo", prize: 20000, color: "black" },
+  { Name: "Iphone", prize: 100000, color: "black" },
+  { Name: "Walton", prize: 24000, color: "black" },
+];
+
+function getCheapestPhone(phones) {
+  let min = phones[0];
+
+  for (let phone of phones) {
+    if (phone.prize < min.prize) {
+      min = phone;
+    }
+  }
+  return min;
+}
+
+const cheap = getCheapestPhone(phones);
+console.log(cheap);
