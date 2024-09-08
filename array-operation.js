@@ -327,6 +327,8 @@ const max = getMax(height);
 console.log("max value is: ", max);
  */
 
+/*
+!wood calculator
 function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
   const perChairWood = 3;
   const perBedWood = 50;
@@ -341,5 +343,29 @@ function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
 }
 
 const wood = woodQuantity(0, 0, 1);
-console.log("Wood needed:", wood);
+todo console.log("Wood needed:", wood); */
 
+/*
+!nija korte hobe
+
+shirt prize = 500;
+pant prize 300;
+show prize = 900; */
+
+
+
+
+const prices = [20000, 16000, 50000, 10000, 12000, 30000, 35000];
+
+function getMin(numbers) {
+  let min = numbers[0]; 
+  for (const num of numbers) {
+    if (num < min) {
+      min = num;
+    }
+  }
+  return min;
+}
+
+const cheap = getMin(prices);
+console.log('Cheapest one is:', cheap);
