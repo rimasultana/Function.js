@@ -255,15 +255,12 @@ console.log(min); */
 /* const max = Math.max(45, 21, 65, 90, 40, 23);
 console.log(max); */
 
-
 // console.log(Math.PI);
-
 
 /* 
 !- thakle (+) + thakle (-)
 gap thakle saita (-) (+) diya thik kore dai
 console.log(Math.abs(-88)); */
-
 
 /*
 !round diya purno sonkha kore dibe
@@ -271,5 +268,78 @@ Example:
 console.log(Math.round(2.25));
 console.log(Math.round(3.50)); */
 
+/*
+! floor diya 2.90 er .90 bad diya dibo
 console.log(Math.floor(2.90));
-console.log(Math.ceil(2.90));
+!ceil diya 2.90 er man 3 kore dibo
+console.log(Math.ceil(2.90)); */
+
+/* 
+! 0.9000000 ete sonkha asbe akek time
+console.log(Math.random());
+console.log(Math.random()* 10);
+const rand = Math.round(Math.random()*10);
+console.log(rand); */
+
+/*
+!date()
+const today = new Date();
+const date = new Date('2062-10-19');
+// console.log(date.getMonth());
+// console.log(data.getDay());
+consy spexificCata = new Date(2091, 0,26);
+console.log(spexificCata);
+ */
+
+/* let a = 5;
+let b = 7;
+
+console.log(a, b);
+
+const temp = a;
+a= b;
+b= temp;
+console.log(a, b);
+
+let x = 5;
+let y = 7;
+
+console.log(x, y);
+
+[x, y] = [y, x];
+console.log(x, y); */
+
+/*
+! array thake baro number bar korar niyam
+const height = [65, 66, 68, 78, 60, 65, 66];
+
+function getMax(numbers) {
+  let max = numbers[0];
+  for (const num of numbers) {
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+}
+
+const max = getMax(height);
+console.log("max value is: ", max);
+ */
+
+function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
+  const perChairWood = 3;
+  const perBedWood = 50;
+  const perTableWood = 10;
+
+  const chairTotalWood = chairQuantity * perChairWood;
+  const bedTotalWood = bedQuantity * perBedWood;
+  const tableTotalWood = tableQuantity * perTableWood;
+
+  const totalWood = chairTotalWood + bedTotalWood + tableTotalWood;
+  return totalWood;
+}
+
+const wood = woodQuantity(0, 0, 1);
+console.log("Wood needed:", wood);
+
