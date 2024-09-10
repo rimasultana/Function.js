@@ -410,32 +410,36 @@ const shop = getShoppingTotal(products)
 console.log('ajjke onek khoraj ', shop);
  */
 
-
 // sob chaiya bro number bar korar niyam
 
-function giveBiggestNumber(array){
+// function giveBiggestNumber(array){
+//   let biggest = array[0];
+//   for(let i = 1; i < array.length; i++){
+//   if(array[i] > biggest){
+//     biggest = array[i];
+//   }
+//   }
+// return biggest;
+// }
+// const numbers =[2,4, 21, 5, 6,23,20, 9];
+// const result = giveBiggestNumber(numbers);
+// console.log(result);
+
+function giveBiggestNumber(array) {
+   if(!Array.isArray(array)){
+    return 'it is not an array';
+   }
+
+
   let biggest = array[0];
-  for(let i = 1; i < array.length; i++){
-  if(array[i] > biggest){
-    biggest = array[i];
+  for (const number of array) {
+    if (number > biggest) {
+      biggest = number;
+    }
   }
-  }
-return biggest;
+  return biggest;
 }
-const numbers =[2,4, 21, 5, 6,23,20, 9];
+const numbers = true;
+// const numbers = [2, 4, 21, 5, 6, 23, 20, 9];
 const result = giveBiggestNumber(numbers);
-console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(result); // Output: 23
