@@ -425,21 +425,62 @@ console.log('ajjke onek khoraj ', shop);
 // const result = giveBiggestNumber(numbers);
 // console.log(result);
 
-function giveBiggestNumber(array) {
-   if(!Array.isArray(array)){
-    return 'it is not an array';
-   }
+// function giveBiggestNumber(array) {
+//    if(!Array.isArray(array)){
+//     return 'it is not an array';
+//    }
 
 
-  let biggest = array[0];
-  for (const number of array) {
-    if (number > biggest) {
-      biggest = number;
-    }
-  }
-  return biggest;
+//   let biggest = array[0];
+//   for (const number of array) {
+//     if (number > biggest) {
+//       biggest = number;
+//     }
+//   }
+//   return biggest;
+// }
+// const numbers = true;
+// // const numbers = [2, 4, 21, 5, 6, 23, 20, 9];
+// const result = giveBiggestNumber(numbers);
+// console.log(result); // Output: 23
+
+
+
+// const person = {
+//   name: 'Rima',
+//   address: 'Mymensingh'
+// }
+
+// function showInfo(info){
+// if(typeof info !== "object"){
+//   return 'please provide a valid object';
+
+// }
+
+//   const result = "amr naam " +info.name + 'amr bari ' +info.address;
+//   return result;
+// }
+// const x = showInfo(person);
+// console.log(x);
+
+
+function calculateSaving(income){
+if(typeof income !== 'number'){
+  return 'invalid input';
 }
-const numbers = true;
-// const numbers = [2, 4, 21, 5, 6, 23, 20, 9];
-const result = giveBiggestNumber(numbers);
-console.log(result); // Output: 23
+
+  const houseRent = 5000;
+  const mealCost = 3000;
+  const personalExpense = 2000;
+  const totalExpenses = houseRent + mealCost + personalExpense ;
+
+if(totalExpenses > income){
+  return 'Earn more.....!'
+}
+
+const savings = income - totalExpenses;
+return savings;
+}
+
+const result = calculateSaving(12000);
+console.log(result);
