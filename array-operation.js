@@ -370,7 +370,7 @@ console.log('Cheapest one is:', cheap);
 
 // object er khatre
 
-const phones = [
+/* const phones = [
   { Name: "Oppo", prize: 30000, color: "black" },
   { Name: "Vivo", prize: 20000, color: "black" },
   { Name: "Iphone", prize: 100000, color: "black" },
@@ -390,3 +390,52 @@ function getCheapestPhone(phones) {
 
 const cheap = getCheapestPhone(phones);
 console.log(cheap);
+ */
+
+/* const products = [
+  {name : 'shompho', prize: 300},
+  {name : 'chiruni', prize: 200},
+  {name : 'shirt', prize: 100},
+  {name : 'pant', prize: 1200},
+]
+
+function getShoppingTotal(products){
+  let total = 0;
+  for(const product of products){
+    total = total + product.prize;
+  }
+  return total;
+}
+const shop = getShoppingTotal(products)
+console.log('ajjke onek khoraj ', shop);
+ */
+
+
+// sob chaiya bro number bar korar niyam
+
+function giveBiggestNumber(array){
+  let biggest = array[0];
+  for(let i = 1; i < array.length; i++){
+  if(array[i] > biggest){
+    biggest = array[i];
+  }
+  }
+return biggest;
+}
+const numbers =[2,4, 21, 5, 6,23,20, 9];
+const result = giveBiggestNumber(numbers);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
